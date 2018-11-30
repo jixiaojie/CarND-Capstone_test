@@ -1,8 +1,0 @@
-prefix=/jixj/uda/term3/c25/p006/ros/install
-
-Name: styx
-Description: Description of styx
-Version: 0.0.0
-Cflags: 
-Libs: -L/jixj/uda/term3/c25/p006/ros/install/lib 
-Requires: 
