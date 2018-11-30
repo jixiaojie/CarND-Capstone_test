@@ -1,0 +1,8 @@
+prefix=/jixj/uda/term3/c25/p006/ros/devel
+
+Name: styx_msgs
+Description: Description of styx_msgs
+Version: 0.0.0
+Cflags: -I/jixj/uda/term3/c25/p006/ros/devel/include
+Libs: -L/jixj/uda/term3/c25/p006/ros/devel/lib 
+Requires: 

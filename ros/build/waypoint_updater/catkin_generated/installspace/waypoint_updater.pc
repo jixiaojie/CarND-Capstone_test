@@ -1,0 +1,8 @@
+prefix=/jixj/uda/term3/c25/p006/ros/install
+
+Name: waypoint_updater
+Description: Description of waypoint_updater
+Version: 0.0.0
+Cflags: 
+Libs: -L/jixj/uda/term3/c25/p006/ros/install/lib 
+Requires: 
