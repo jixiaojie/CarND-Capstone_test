@@ -17,7 +17,7 @@ class Controller(object):
         ki = 0.1
         kd = 0.
         mn = 0. # Minimum throttle value
-        mx = 0.2 # Maximum throttle value
+        mx = 0.5 # Maximum throttle value
 
         tau = 0.5 # 1/(2pi * tau) = cutoff frequency
         ts = 0.02 # Sample time
@@ -61,7 +61,7 @@ class Controller(object):
        
         elif throttle < .1 and vel_error < 0:
             throttle = 0
-            decel = max(vel_error, self.decle_limit)
+            decel = max(vel_error, self.decel_limit)
             brake = abs(decel) * self.vehicle_mass * self.wheel_radius # Torque N*m
 
 

@@ -62,13 +62,13 @@ class WaypointLoader(object):
 
     def decelerate(self, waypoints):
         last = waypoints[-1]
-        last.twist.twist.linear.x = 0.
+        last.twist.twist.linear.x = 20.
         for wp in waypoints[:-1][::-1]:
             dist = self.distance(wp.pose.pose.position, last.pose.pose.position)
             vel = math.sqrt(2 * MAX_DECEL * dist)
             if vel < 1.:
                 vel = 0.
-            wp.twist.twist.linear.x = min(vel, wp.twist.twist.linear.x)
+            wp.twist.twist.linear.x = 2 * min(vel, wp.twist.twist.linear.x)
         return waypoints
 
     def publish(self, waypoints):
